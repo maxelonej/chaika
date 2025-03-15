@@ -18,17 +18,47 @@ ul {
   }
 }
 
-main {
-  height: 100dvh;
-}
-
-section {
-  min-height: 100dvh;
-}
-
 .big-icon {
   max-width: 200px;
   min-width: 100px;
+}
+
+.carousel-inner {
+  background: #f8f9fa; /* Фон для областей без изображения */
+  min-height: 400px;
+}
+
+.carousel-item img {
+  max-height: 500px;
+  width: auto !important;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+/* Custom btns */
+.custom-carousel-control {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background-size: 60% !important;
+  transition: all 0.3s ease;
+}
+
+.carousel-control-prev {
+  left: 20px;
+}
+
+.carousel-control-next {
+  right: 20px;
+}
+
+.custom-carousel-control:hover {
+  background-color: rgba(0, 0, 0, 1) !important;
+  transform: scale(1.1);
 }
 
 @media (width >= 768px) {
@@ -43,25 +73,17 @@ section {
   .burger-links {
     display: none;
   }
-
-  body {
-    height: 100dvh;
-    overflow: hidden;
-  }
-
-  main {
-    scroll-snap-type: y mandatory;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  section {
-    scroll-snap-align: start;
-    -webkit-scroll-snap-align: start;
-  }
 }
 
 @media (width < 768px) {
+  .carousel-inner {
+    max-height: 300px !important;
+  }
+
+  .carousel-item img {
+    max-height: 300px !important;
+  }
+
   .burger-links {
     position: fixed;
     top: 6rem;

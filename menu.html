@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Меню в кафе - Чайка</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/logo.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header
+      class="position-fixed fixed-top d-flex justify-content-center align-items-center p-md-4 ms-sm-4 mx-md-auto mt-md-4 mt-sm-4 fs-4 rounded bg-body-secondary"
+    >
+      <div class="burger">
+        <img class="logo" src="assets/burger-menu-left.svg" alt="Бургер меню" />
+      </div>
+      <nav>
+        <ul class="d-flex m-0 p-0 gap-4 text-nowrap fs-4">
+          <li>
+            <a
+              class="link text-decoration-none text-muted fw-bold"
+              href="index.html"
+              >Главная</a
+            >
+          </li>
+          <li>
+            <a
+              class="link text-decoration-none text-dark fw-bold"
+              href="menu.html"
+              >Меню в кафе</a
+            >
+          </li>
+          <li>
+            <a class="link text-decoration-none text-muted fw-bold" href="#"
+              >Галерея</a
+            >
+          </li>
+          <li>
+            <a class="link text-decoration-none text-muted fw-bold" href="#"
+              >Контакты</a
+            >
+          </li>
+          <li>
+            <a class="link text-decoration-none text-muted fw-bold" href="#"
+              >Меню доставки</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="burger-links z-1">
+      <nav class="nav rounded">
+        <ul class="d-flex flex-column m-0 p-0 gap-4 text-nowrap fs-4">
+          <li>
+            <a
+              class="link text-decoration-none text-muted fw-bold"
+              href="index.html"
+              >Главная</a
+            >
+          </li>
+          <li>
+            <a
+              class="link text-decoration-none text-dark fw-bold"
+              href="menu.html"
+              >Меню в кафе</a
+            >
+          </li>
+          <li>
+            <a class="link text-decoration-none text-muted fw-bold" href="#"
+              >Галерея</a
+            >
+          </li>
+          <li>
+            <a class="link text-decoration-none text-muted fw-bold" href="#"
+              >Контакты</a
+            >
+          </li>
+          <li>
+            <a class="link text-decoration-none text-muted fw-bold" href="#"
+              >Меню доставки</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <main class="w-100 pt-5 mt-5">
+      <!-- Слайдер -->
+      <section class="container-xxl mt-4 mb-3">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10 col-xl-8 position-relative">
+            <div
+              id="menuCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div
+                class="carousel-inner pt-4 rounded-3"
+                style="max-height: 600px"
+              >
+                <div class="carousel-item rounded-3 active">
+                  <div
+                    class="d-flex align-items-center justify-content-center h-100"
+                  >
+                    <img
+                      src="assets/slider/potato.jpg"
+                      class="d-block img-fluid mx-auto rounded-3"
+                      alt="Блюда"
+                      style="max-height: 600px; width: auto"
+                    />
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    class="d-flex align-items-center justify-content-center h-100"
+                  >
+                    <img
+                      src="assets/slider/shashlik.jpg"
+                      class="d-block img-fluid mx-auto rounded-3"
+                      alt="Шашлык"
+                      style="max-height: 600px; width: auto"
+                    />
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    class="d-flex align-items-center justify-content-center h-100"
+                  >
+                    <img
+                      src="assets/slider/chicken.jpg"
+                      alt="Курица"
+                      class="d-block img-fluid mx-auto rounded-3"
+                      style="max-height: 600px; width: auto"
+                    />
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    class="d-flex align-items-center justify-content-center h-100"
+                  >
+                    <img
+                      src="assets/slider/sausages.jpg"
+                      alt="Сосиски"
+                      class="d-block img-fluid mx-auto rounded-3"
+                      style="max-height: 600px; width: auto"
+                    />
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    class="d-flex align-items-center justify-content-center h-100"
+                  >
+                    <img
+                      src="assets/slider/dumplings.jpg"
+                      alt="Пельмени"
+                      class="d-block img-fluid mx-auto rounded-3"
+                      style="max-height: 600px; width: auto"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#menuCarousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon custom-carousel-control"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Предыдущий</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#menuCarousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon custom-carousel-control"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Следующий</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Фильтры категорий -->
+      <section class="container-xxl my-5">
+        <div
+          class="d-flex flex-wrap gap-2 justify-content-center"
+          id="categoryFilters"
+        >
+          <button class="btn btn-outline-dark active" data-category="all">
+            Все
+          </button>
+          <button class="btn btn-outline-dark" data-category="grill">
+            Блюда на мангале
+          </button>
+          <button class="btn btn-outline-dark" data-category="main">
+            Вторые блюда
+          </button>
+          <button class="btn btn-outline-dark" data-category="garnishes">
+            Гарниры
+          </button>
+          <button class="btn btn-outline-dark" data-category="hot-app">
+            Горячие закуски
+          </button>
+          <button class="btn btn-outline-dark" data-category="desserts">
+            Десерты
+          </button>
+        </div>
+      </section>
+
+      <!-- Секции меню -->
+      <section class="container-xxl mb-5">
+        <!-- Блюда на мангале -->
+        <div class="menu-category" data-category="grill">
+          <h3 class="mb-4 text-primary">Блюда на мангале</h3>
+          <div class="row g-4">
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">Свинина мякоть</h5>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="text-muted">220 гр.</span>
+                    <span class="badge bg-primary fs-6">380 ₽</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">Баранина</h5>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="text-muted">220 гр.</span>
+                    <span class="badge bg-primary fs-6">600 ₽</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">Куриная мякоть</h5>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="text-muted">220 гр.</span>
+                    <span class="badge bg-primary fs-6">300 ₽</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Вторые блюда -->
+        <div class="menu-category" data-category="main">
+          <h3 class="mb-4 text-primary mt-5">Вторые блюда</h3>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">Хинкали с сыром</h5>
+                  <p class="card-text">Заказ от 3-х шт.</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="text-muted">1 шт.</span>
+                    <span class="badge bg-primary fs-6">70 ₽</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">«Медвежья лапа»</h5>
+                  <p class="card-text">
+                    Отбивная из свинины, свежий картофель, сыр, специи, майонез
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="text-muted">250 гр.</span>
+                    <span class="badge bg-primary fs-6">350 ₽</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">Хинкали с телятиной и зеленью</h5>
+                  <p class="card-text">Заказ от 3-х шт.</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="text-muted">1 шт.</span>
+                    <span class="badge bg-primary fs-6">80 ₽</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Гарниры -->
+        <div class="menu-category" data-category="garnishes">
+          <h3 class="mb-4 text-primary mt-5">Гарниры</h3>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">Картофель по-деревенски</h5>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="text-muted">150 гр.</span>
+                    <span class="badge bg-primary fs-6">180 ₽</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">Картофельное пюре</h5>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="text-muted">150 гр.</span>
+                    <span class="badge bg-primary fs-6">80 ₽</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">Картофель запеченный с сыром</h5>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="text-muted">150 гр.</span>
+                    <span class="badge bg-primary fs-6">150 ₽</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Горячие закуски -->
+        <div class="menu-category" data-category="hot-app">
+          <h3 class="mb-4 text-primary mt-5">Горячие закуски</h3>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">Шампиньоны фаршированные</h5>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="text-muted">100 гр.</span>
+                    <span class="badge bg-primary fs-6">250 ₽</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">Жульен из курицы с грибами</h5>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="text-muted">200 гр.</span>
+                    <span class="badge bg-primary fs-6">250 ₽</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Десерты -->
+        <div class="menu-category" data-category="desserts">
+          <h3 class="mb-4 text-primary mt-5">Десерты</h3>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">Мороженое</h5>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="text-muted">100 гр.</span>
+                    <span class="badge bg-primary fs-6">80 ₽</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">Мороженое с сиропом</h5>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="text-muted">100 гр.</span>
+                    <span class="badge bg-primary fs-6">90 ₽</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">Мороженое с шоколадом</h5>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="text-muted">100 гр.</span>
+                    <span class="badge bg-primary fs-6">100 ₽</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="bg-dark text-white w-100 mt-auto py-5">
+        <div class="container">
+          <div class="row g-2 g-md-4">
+            <div class="col-md-6">
+              <div class="pe-md-4 mb-5 mb-md-0">
+                <h4 class="text-uppercase fs-4 mb-4 text-primary">Контакты</h4>
+                <div class="d-flex flex-column gap-3">
+                  <p class="mb-0">
+                    <i class="bi bi-geo-alt-fill me-2"></i>
+                    КАФЕ-БАР «ЧАЙКА»<br />
+                    Тольятти, Дзержинского 86
+                  </p>
+                  <p class="mb-0">
+                    <i class="bi bi-telephone-fill me-2"></i>
+                    Тел.:
+                    <a href="tel:+78482751715" class="text-white"
+                      >(8482) 751-715</a
+                    >
+                  </p>
+                  <p class="mb-0">
+                    <i class="bi bi-envelope-fill me-2"></i>
+                    Email:
+                    <a href="mailto:lir-m@mail.ru" class="text-white"
+                      >lir-m@mail.ru</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="ps-md-4 h-100">
+                <h4
+                  class="text-uppercase mb-2 mb-md-3 fs-5 fs-md-4 text-primary"
+                >
+                  Время работы
+                </h4>
+
+                <div
+                  class="d-flex flex-column gap-2"
+                  style="max-height: 40dvh; overflow-y: auto"
+                >
+                  <div class="d-flex justify-content-between">
+                    <span class="text-secondary small">Понедельник</span>
+                    <span class="small">12:00 - 24:00</span>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <div class="text-secondary small">Вторник</div>
+                    <div class="small">12:00 - 24:00</div>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <div class="text-secondary small">Среда</div>
+                    <div class="small">12:00 - 24:00</div>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <div class="text-secondary small">Четверг</div>
+                    <div class="small">12:00 - 24:00</div>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <div class="text-secondary small">Пятница</div>
+                    <div class="small">12:00 - 24:00</div>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <div class="text-secondary small">Суббота</div>
+                    <div class="small">12:00 - 24:00</div>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <div class="text-secondary small">Воскресенье</div>
+                    <div class="small">12:00 - 24:00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-5 pt-4 border-top border-secondary text-center">
+            <small class="text-secondary"
+              >© 2025 Кафе-бар "Чайка". Все права защищены</small
+            >
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Скрипты -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
